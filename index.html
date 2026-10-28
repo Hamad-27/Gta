@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#10231c"><title>Thamarassery Open World</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js"}}</script>
+</head>
+<body>
+  <div id="loading"><div class="logo">THAMARASSERY <span>OPEN WORLD</span></div><p>Building your world…</p><div class="loadbar"><i></i></div></div>
+  <div id="hud">
+    <div class="brand"><b>THAMARASSERY</b><small>OPEN WORLD · PROTOTYPE</small></div>
+    <div class="status"><span id="mode">ON FOOT</span><span id="clock">08:30</span></div>
+    <div id="mission"><strong>MISSION 01</strong><p id="missionText">Reach the green checkpoint.</p><small id="distance">CHECKPOINT: —</small></div>
+    <div id="message">Explore the town. Find a car and press E to drive.</div>
+  </div>
+  <div id="crosshair"></div>
+  <div id="controls">
+    <div class="move-pad"><button data-key="w" class="up">▲</button><button data-key="a" class="left">◀</button><button data-key="s" class="down">▼</button><button data-key="d" class="right">▶</button></div>
+    <div class="action-pad"><button data-action="run">RUN</button><button data-action="interact" class="primary">E · ENTER</button><button data-action="brake">BRAKE</button></div>
+    <div class="look-help">Drag the right side to look around</div>
+  </div>
+  <div id="desktop-help">WASD move/drive · Mouse drag look · Shift run · E enter/exit car · Space handbrake · R reset car</div>
+  <script type="module" src="js/game.js"></script>
+</body></html>
